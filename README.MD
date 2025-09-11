@@ -7,7 +7,6 @@ Install dependencies:
 npm init -y
 npm install express mongoose bcryptjs jsonwebtoken
 
-
 Create index.js with Express.
 
 Connect MongoDB with Mongoose.
