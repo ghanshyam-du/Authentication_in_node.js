@@ -8,11 +8,11 @@ npm init -y
 npm install express mongoose bcryptjs jsonwebtoken
 
 
-Create server.js with Express.
+Create index.js with Express.
 
 Connect MongoDB with Mongoose.
 
-Test by running node server.js.
+Test by running node index.js.
 -----------------------------------------------------------------------------------
 Day 2: User Model
 
