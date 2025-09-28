@@ -1,5 +1,6 @@
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
+import authMiddleware from "../middleware/auth.middleware.js";
 
 import User from "../model/user.js"
 
@@ -57,3 +58,11 @@ export const login =async (req, res)=>{
 
     }
 }
+
+export const dashboard = [authMiddleware, (req, res)=>{
+    res.json({
+        message:" Welcome to your dashboard!",
+        userId: req.user.id,
+    });
+}]
+
