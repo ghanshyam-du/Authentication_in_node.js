@@ -61,6 +61,7 @@ export const login =async (req, res)=>{
 
 export const dashboard = [authMiddleware, (req, res)=>{
     res.json({
+        name : req.body.username,
         message:" Welcome to your dashboard!",
         userId: req.user.id,
     });
