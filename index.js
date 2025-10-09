@@ -1,5 +1,7 @@
 import express from "express"
 import dotenv from "dotenv"
+import cors from "cors";
+import helmet from "helmet";
 import connectMongodb from "./connection.js"
 
 import userAuth from "./routes/auth.js"
@@ -11,6 +13,8 @@ connectMongodb();
 
 app.use(express.json());
 app.use(express.urlencoded());
+app.use(cors());
+app.use(helmet());
 
 app.use('/api',userAuth);
 
