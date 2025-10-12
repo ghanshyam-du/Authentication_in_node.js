@@ -6,7 +6,7 @@ dotenv.config();
 const authMiddleware = (req, res, next) => {
   const authHeader = req.header("Authorization") || req.header("authorization");
 
-  console.log("Authorization Header:", authHeader);
+  console.log("Authorization Header :", authHeader);
 
   if (!authHeader) {
     return res.status(401).json({ message: "Access Denied. No token provided!" });
