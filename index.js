@@ -20,6 +20,6 @@ app.use('/api',userAuth);
 
 
 app.listen(PORT, ()=>{
-    console.log(`Server is running successfuly at the ${PORT}`);
+    console.log(`Server is running successfuly at the port no: ${PORT}`);
 })
 
