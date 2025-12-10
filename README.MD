@@ -1,4 +1,4 @@
-Day 1: Setup Project
+Day 1: Setup Project - 
 
 ✅ Goal → Create base project and server.
 
